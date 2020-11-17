@@ -1,6 +1,6 @@
 # Anarchism and gender
 
-This project provides a tool to analyse short text corpora, namely historical 
+This project is a tool to analyse short text corpora, namely historical 
 Austrian newspaper articles. Newspapers are, amongst other file formats, 
 available as text files via the ANNO tool (see http://anno.onb.ac.at) provided
 by the Austrian National Library. The project is part of an undergraduate 
@@ -11,9 +11,18 @@ at the University of Vienna. The seminar deals with anarchism and gender.
 
 * Working python 3.7+ installation (https://www.python.org/downloads/)
 
+Open a terminal and check your current Python 3 version by running:
+```shell script
+python3 -V
+Python 3.7.3  # 3.8.X is also fine
+```
+
 ## project setup
 
 ### download project
+
+Open a terminal, clone the project, enter the project folder and create the log
+directory:
 
 ```shell script
 git clone https://github.com/raphiniert/AnarchismAndGender.git
@@ -23,7 +32,7 @@ mkdir log
 
 ### setup virtual environment and install dependencies
 
-Open a terminal, enter the project folder an execute following steps:
+Enter the project folder an execute following steps:
 
 ```shell script
 python3 -m venv venv
