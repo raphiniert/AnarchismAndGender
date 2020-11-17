@@ -73,5 +73,3 @@ if __name__ == "__main__":
     logger.info(
         f"Completed. Processing took {(datetime.datetime.now() - t1).seconds}s."
     )
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
