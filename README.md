@@ -59,3 +59,10 @@ You can enable it by running:
 ```shell script
 . venv/bin/activate
 ```
+
+#### `FileNotFoundError: [Errno 2] No such file or directory: '/path/to/project/log/*anarchism.log'`
+Make sure the log folder exists.
+You can create it by running:
+```shell script
+mkdir log
+```
