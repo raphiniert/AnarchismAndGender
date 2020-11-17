@@ -8,6 +8,10 @@ import spacy
 # useful stuff
 from collections import Counter
 
+# db
+from sqlalchemy import create_engine, func
+from sqlalchemy.orm import sessionmaker
+
 
 # arguments
 parser = argparse.ArgumentParser()
