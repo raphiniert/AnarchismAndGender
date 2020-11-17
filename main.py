@@ -56,6 +56,7 @@ def get_texts():
         text = preprocess_text(f.read())
     return text
 
+
 # Press the green button in the gutter to run the script.
 if __name__ == "__main__":
     t1 = datetime.datetime.now()
@@ -64,8 +65,8 @@ if __name__ == "__main__":
         logger.setLevel(10)
     nlp = spacy.load(spacy_model)
     logger.debug(f"Loaded spacy model {spacy_model}")
-    doc = nlp(get_texts())
     # TODO: store preprocessed texts in db
+    doc = nlp(get_texts())  # TODO: do the nlp preprocessing standard tasks
     entities = [ent.text.lower() for ent in [ents for ents in doc.ents]]
     entitiy_frequency = Counter(entities)
     logger.info(entitiy_frequency)
