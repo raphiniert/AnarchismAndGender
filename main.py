@@ -61,7 +61,6 @@ def get_texts():
     return text
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == "__main__":
     t1 = datetime.datetime.now()
     args = parser.parse_args()
