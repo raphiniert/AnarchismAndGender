@@ -23,7 +23,7 @@ FORMAT = "%(asctime)-15s %(levelname)s %(message)s"
 logging.basicConfig(
     filename=f"log/{datetime.datetime.now()}_anarchism.log", format=FORMAT, level=20
 )
-logger = logging.getLogger("sentiment")
+logger = logging.getLogger("anarchism")
 
 # create console handler and set level to debug
 ch = logging.StreamHandler()
