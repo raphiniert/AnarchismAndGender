@@ -114,6 +114,8 @@ if __name__ == "__main__":
     result_count = int(result_count.text.split(" ")[0].replace(".", ""))
     pages = math.ceil(result_count / RESULTS_PER_PAGE)
     logger.info(f"Expecting {result_count} results on {pages} pages.")
+
+    # extract links to journals containt search text
     journal_list = []
     for p in range(1, pages + 1):
         # iterate through links
@@ -125,6 +127,8 @@ if __name__ == "__main__":
         )
         time.sleep(NAP_TIME)
     logger.info(f"Extracted {len(journal_list)} {JOURNAL_TYPE} links.")
+
+    # save links to file
     journal_list_filename = f"journals/{SEARCH_TEXT}_{DATE_FROM}-{DATE_TO}.txt"
     with open(journal_list_filename, "w") as f:
         f.write("\n".join(journal_list))
