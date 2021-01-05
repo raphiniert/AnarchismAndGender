@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.DS_Store
 
 # Environments
 venv/
@@ -13,3 +14,4 @@ venv/
 log/*.log
 anarchism.db
 text/
+bin/
