@@ -32,6 +32,7 @@ regex==2020.11.11
 requests==2.24.0
 s3transfer==0.3.3
 sacremoses==0.0.43
+selenium==3.141.0
 sentencepiece==0.1.94
 six==1.15.0
 spacy==2.3.2
