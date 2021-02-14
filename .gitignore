@@ -15,3 +15,4 @@ log/*.log
 anarchism.db
 text/
 bin/
+tmp/
