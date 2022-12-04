@@ -27,7 +27,7 @@ pre-commit==2.9.0
 preshed==3.0.4
 python-dateutil==2.8.1
 pytokenizations==0.7.2
-PyYAML==5.3.1
+PyYAML==5.4
 regex==2020.11.11
 requests==2.24.0
 s3transfer==0.3.3
